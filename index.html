@@ -28,49 +28,53 @@
     <!--<script src="js/gnmenu.js"></script>-->
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript">
-        $("document").ready(function() {            
-                        
-                        $('.us').click(function(){
-                                                   
-                            $('html, body').animate({
-                                scrollTop: $(".heading-about").offset().top
-                            }, 2000);                  
-                             
-                                                   
-                         });
-                        
-                        
-                        
-                        $('.reach').click(function(){
-                                                   
-                            $('html, body').animate({
-                                scrollTop: $(".foot").offset().top
-                            }, 2000);                  
-                             
-                                                   
-                         });
-                        
-                        
-                        
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){  
+                $('.mainLogo').addClass("sticky");
+            }
+            else{
+                $('.mainLogo').removeClass("sticky");
+            }
+        });
+
+        $(document).ready(function() {
+            $('.carousel').carousel({interval: 4000});
+        });
+
+        $("document").ready(function() {                                   
+            $('.us').click(function(){
+                $('html, body').animate({
+                    scrollTop: $(".heading-about").offset().top-100
+                }, 2000);                  
+            });
+            $('.reach').click(function(){
+
+                $('html, body').animate({
+                    scrollTop: $(".foot").offset().top
+                }, 2000);                  
+            });
 
         }); 
+
     </script>
 
 </head>
 
-<body style="background-image: url('img/wallpaper.jpg');background-attachment: fixed;">
-    <header id="mainHead">
+<body style="background-image: url('img/back-bg2.jpg');background-attachment: fixed;">
+
+<!-- Header with logo and navigation -->
+   <header id="mainHead">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-lg-4 text-left logoDiv">
-                        <img id="mainLogo" src="img/logos/maypriLogo.png" alt="Maypri" />
+                        <img class="mainLogo" src="img/logos/maypriLogo.png" alt="Maypri" />
                     </div>
                     <div class="col-sm-12 col-md-8 col-lg-8" style="">
                         <ul class="listOptions navigationList text-right" style="padding-top: 20px;">
                             <li class="us listEntryOptions">ABOUT US</li>
                             <li class="listEntryOptions"><a href="mayprifoods.html">MAYPRI FOODS</a></li>
                             <li class="listEntryOptions"><a href="mayprihealthcare.html">MAYPRI HEALTHCARE</a></li>
-                            <li class="reach listEntryOptions" style="border-right: none;">CONTACT</li>
+                            <li class="reach listEntryOptions">CONTACT</li>
                         </ul>
                     </div>
                 </div>
@@ -78,35 +82,18 @@
         </header>
 
     <style type="text/css">
-       #logo {
-            margin: 0 auto;
-            padding-bottom: 20px;
-            opacity: 0.8;
-        }
-        #logoWork {
-            margin: 0 auto;
-            padding-left: 100px;
-            padding-right: 100px;
-       }
-       .profile {
-            margin : 0 auto;
-            width:50%;
-            height: auto;
-            padding-bottom: 10px;
-       }
-
-    </style>
+     </style>
 
     <!-- Section: carousel -->
-    <section id="carousel" class="">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+    <section id="carousel" class="carouselClass" style="margin-top: 200px; margin-bottom: 0px;">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" > 
             <!-- Indicators --> 
             <!--<ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>-->
-            <div class="carousel-inner">
+            <div class="carousel-inner"  style="box-shadow: 10px 10px 5px #888888; width:100%; max-height:80%; margin:0 auto;">
                 <div class="item active"> <img src="img/avalanche2.png" style="width:100%" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption">
@@ -132,8 +119,8 @@
                     </div>
                 </div>
             </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
-            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>-->
         </div>
     </section>
     <!-- /Section: carousel -->
@@ -146,8 +133,11 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="section-heading">
-                            <h2 style="color: #EB5D1E;">Our Vision</h2>
-                            <p style="font-size: large; color: white;">To be the best and most preferred services company for our people, partners and clients</p> 
+                            <p style="text-shadow: 4px 4px #B4B4B4;font-size: 60px;color: #EB5D1E; font-weight:bold; font-style:italic ;font-family:cursive;">Our Vision</p><br/>
+                            <p>---------------------------------------------------------------------</p>
+                            <p style="font-style:italic;font-size: 30px; color: #7B7B7B; font-weight:bold; font-family:cursive;">To be the best and most preferred services company for our people, partners and clients</p><br/>
+                            <p>---------------------------------------------------------------------</p>
+ 
                         </div>
                     </div>
                 </div>

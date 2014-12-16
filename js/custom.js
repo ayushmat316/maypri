@@ -1,7 +1,32 @@
 
 (function ($) {
 
-	new gnMenu( document.getElementById( 'gn-menu' ) );
+    $('header nav a').click(function() {
+        var $linkClicked = $(this).attr('href');
+        document.location.hash = $linkClicked;
+        if (!$(this).hasClass("active")) {
+            $("header nav a").removeClass("active");
+            $(this).addClass("active");
+            $('#wrapper section').hide();
+            $($linkClicked).fadeIn();
+            return false;
+        }
+        else {
+            return false;
+        }
+    });
+    var hash = window.location.hash;
+    hash = hash.replace(/^#/, '');
+    switch (hash) {
+        case 'restaurants' :
+            $("#" + hash + "-link").trigger("click");
+            break;
+        case 'vending' :
+            $("#" + hash + "-link").trigger("click");
+            break;
+     }
+
+    /*	new gnMenu( document.getElementById( 'gn-menu' ) );
 
 
 	//jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -37,7 +62,6 @@
 		onPrev: function(element){},                // Callback when the lightbox gallery goes to previous item
 		onNext: function(element){},                // Callback when the lightbox gallery goes to next item
 		errorMessage: 'The requested content cannot be loaded. Please try again later.' // Error message when content can't be loaded
-	});
+	}); */
 
-	
 })(jQuery);

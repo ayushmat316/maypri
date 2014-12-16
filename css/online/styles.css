@@ -82,7 +82,7 @@ hr {
 
 .home-section {
     padding-top: 60px;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
 	display:block;
     position:relative;
     z-index:120;
