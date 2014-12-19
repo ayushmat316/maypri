@@ -1,0 +1,353 @@
+body {
+  background-image: url('../img/cream_linen_bg.jpg');
+  background-attachment: fixed;
+}
+p {
+  font-weight: bolder;
+  text-shadow: 2px;
+}
+
+#logo {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  opacity: 0.8;
+}
+#logoWork {
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.profile {
+  margin : 0 auto;
+  width:60%;
+  height: auto;
+  border:2px solid white;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition: all 0.6s ease;
+}
+
+/*.profile:hover {
+  width: 80%;
+  border:1px solid #eaeaea;
+  box-shadow: 5px 5px 0px #888888;
+  opacity: 1;
+  transition: all 0.6s ease;
+
+}*/
+
+/*#bio1,#bio2 {
+  display: none;
+}*/
+
+#mainHead {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  top: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  background-color: #99CCCC; 
+ box-shadow: 5px 5px 5px #888888;
+  margin-bottom: 20px;
+ background-image: url('../img/teal2.jpg');
+  background-attachment: fixed;
+  background-size: 100%; 10%;
+}
+#foodHead {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  top: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  background-color: #FF8000; 
+ box-shadow: 5px 5px 5px #888888;
+  margin-bottom: 20px;
+background-image: url('../img/orange.jpg');
+  background-attachment: fixed;
+  background-size: 100%;
+}
+#healthHead {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  top: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #000080;
+ box-shadow: 5px 5px 5px #888888;
+  margin-bottom: 20px;
+background-image: url('../img/darkblue.jpg');
+  background-attachment: fixed;
+  background-size: 100%;
+}
+.mainLogo {
+  margin: 0 auto;
+  height: 15%;
+  min-height: 80px;
+  width: auto;
+  transition: all 1s ease;
+}
+
+.sticky {
+  margin: 0 auto;
+  height: 10%;
+  width: auto;
+  transition: all 1s ease;
+
+}
+
+.listOptions {
+  list-style-type: none;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  padding-top: 20px;
+  font-family: '';
+  font-weight: bold;
+}
+
+
+.listEntryOptions {
+  margin: 0 auto;
+  cursor: pointer;
+  color: #EB5D1E;
+  font-weight: bolder;
+  display: inline;
+  font-size: 1em;
+  margin-bottom: 0;
+  margin-right: 3px;
+  padding-left: 0.5em;
+  padding-right: 10px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  /*border-right: groove;*/
+}
+
+.listEntryOptions2 {
+  margin: 0 auto;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: medium;
+  display: inline;
+  font-size: 1em;
+  margin-bottom: 0;
+  margin-right: 3px;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  /*border-right: groove;*/
+}
+
+
+.listEntryOptions2:hover {
+  border:2px solid #FFFFFF;
+  border-radius: 4px;
+}
+
+.listEntryOptions2 a {
+  color: #FFFFFF;
+}
+
+.listEntryOptions:hover {
+  background: -webkit-linear-gradient(top, #FFFFFF 0%, #E5E5E5 100%);
+  box-shadow: rgba(0, 0, 0, 0.0980392) 2px 2px;
+  color: #EB5D1E;
+  text-shadow: #FFFFFF 1px 1px;
+  border-radius: 4px;
+}
+
+.listEntryOptions a {
+  color: #EB5D1E;
+}
+
+/*Carousel styling */
+.carousel {
+   /* height: 500px;*/
+    overflow: hidden;
+   border: 20px double #ece8e1;
+}
+.carousel .item {
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.carousel .active.left, .carousel .active.right {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+.carousel .next, .carousel .prev {
+    left:0;
+    opacity:1;
+    z-index:1;
+}
+
+
+.contact {
+  list-style:none;
+  margin:0.25em 0 0.5em;
+  overflow:hidden;
+  padding:0;
+  text-align: justify;
+  color: black;
+  font-weight: 900;
+}
+
+ 
+@media only screen and (device-width: 768px), only screen and (max-width: 1000px)  {
+
+    .listEntryOptions {
+        font-size:0.8em;
+    }
+
+    .navigationList {
+      text-align: center;
+    }
+    .logoDiv {
+      text-align: center;
+    }
+   .carouselClass {
+      margin-top: 600px; margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+   /* .sticky {
+      margin: 0 auto;
+      height: 0%;
+      width: auto;
+      transition: all 0.5s ease;
+    } */ 
+    .mainLogo {
+      margin: 0 auto;
+      height: 8%;
+      width: auto;
+      transition: all 1s ease;
+    }    
+}
+
+
+/*
+@media screen and (max-width: 600px) {
+    .listEntryOptions {
+        font-size:0.8em;
+    }
+    .navigationDiv {
+      text-align: justify;
+    }
+    /*
+    .sticky {
+      margin: 0 auto;
+      height: 0%;
+      width: auto;
+      transition: all 1s ease;
+    } 
+
+    .carouselClass {
+      margin-top: 200px; margin-bottom: 0px;
+    }
+}
+*/
+
+
+.foot {
+    width: 100%;
+    height: 150px;
+    background-color: #4F4F4F;
+/*   background-image: url('../img/grey.jpg');
+    background-attachment: fixed;*/
+}
+
+
+/*TEST CODE*/
+#background,#restaurants {
+  display: none;
+}
+.img-thumbnail {
+    padding: 2px;
+    border-radius: 10px;
+}
+.post-box {
+    margin: 15px 0 15px 0;
+}
+
+.post-box2 {
+    margin: 15px 0 15px 0;
+    width: 50%;
+
+}
+.testimonial {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.testimonial::before { 
+    content: url('../img/icons/paperclip.png');
+    left: -10px;
+    top: -18px;
+    position: absolute;
+ }
+.post-box3 {
+    padding-left: 30px;
+    margin: 15px 5px 15px 5px;
+    width: 280px;   
+    background-color: #F4FBFD;
+    border-radius: 8px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 1px #888888;
+}
+/* --------------------*/
+
+
+/*FLIPPING EFFECT*/
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000;
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front {
+  margin: 0 auto;
+  width: 100%;
+  height: 50%;
+}
+.flip-container, .back {
+  margin: 0 auto;
+  width: 100%;
+  height: 50%;
+}
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+ }
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
