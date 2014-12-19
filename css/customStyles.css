@@ -1,3 +1,8 @@
+body {
+  background-image: url('../img/back-bg2.jpg');
+  background-attachment: fixed;
+}
+
 p {
   font-weight: bolder;
   text-shadow: 2px;
@@ -15,10 +20,27 @@ p {
 }
 .profile {
   margin : 0 auto;
-  width:50%;
+  width:60%;
   height: auto;
-  padding-bottom: 10px;
+  border:2px solid white;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition: all 0.6s ease;
 }
+
+/*.profile:hover {
+  width: 80%;
+  border:1px solid #eaeaea;
+  box-shadow: 5px 5px 0px #888888;
+  opacity: 1;
+  transition: all 0.6s ease;
+
+}*/
+
+/*#bio1,#bio2 {
+  display: none;
+}*/
 
 #mainHead {
   position: fixed;
@@ -34,8 +56,9 @@ p {
 
 .mainLogo {
   margin: 0 auto;
-  height: 20%;
+  height: 15%;
   width: auto;
+  transition: all 1s ease;
 }
 
 .sticky {
@@ -75,16 +98,19 @@ p {
 }
 
 .listEntryOptions a {
-color: #EB5D1E;
+  color: #EB5D1E;
 }
 .listEntryOptions:hover {
   background: -webkit-linear-gradient(top, #FFFFFF 0%, #E5E5E5 100%);
   box-shadow: rgba(0, 0, 0, 0.0980392) 2px 2px;
   color: #EB5D1E;
   text-shadow: #FFFFFF 1px 1px;
+  border-radius: 4px;
 }
+
+/*Carousel styling */
 .carousel {
-    height: 400px;
+    height: 500px;
     overflow: hidden;
 }
 .carousel .item {
@@ -105,6 +131,7 @@ color: #EB5D1E;
     z-index:1;
 }
 
+
 .contact {
   list-style:none;
   margin:0.25em 0 0.5em;
@@ -116,7 +143,7 @@ color: #EB5D1E;
 }
 
  
-@media screen and (max-width: 1024px) {
+@media only screen and (device-width: 768px), only screen and (max-width: 1000px)  {
 
     .listEntryOptions {
         font-size:0.8em;
@@ -128,49 +155,93 @@ color: #EB5D1E;
     .logoDiv {
       text-align: center;
     }
-    .carouselClass {
-      margin-top: 200px; margin-bottom: 0px;
+   .carouselClass {
+      margin-top: 600px; margin-bottom: 0px;
+      padding-bottom: 0px;
     }
-    .sticky {
+   /* .sticky {
       margin: 0 auto;
       height: 0%;
       width: auto;
+      transition: all 0.5s ease;
+    } */ 
+    .mainLogo {
+      margin: 0 auto;
+      height: 8%;
+      width: auto;
       transition: all 1s ease;
-    }  
+    }    
 }
 
 
-@media screen and (max-width: 568px) {
+/*
+@media screen and (max-width: 600px) {
     .listEntryOptions {
         font-size:0.8em;
     }
     .navigationDiv {
       text-align: justify;
     }
+    /*
     .sticky {
       margin: 0 auto;
       height: 0%;
       width: auto;
       transition: all 1s ease;
-    }  
+    } 
+
     .carouselClass {
       margin-top: 200px; margin-bottom: 0px;
     }
 }
+*/
 
 
 .foot {
     width: 100%;
     height: 150px;
     background-color: #333333;
-    
 }
 
-.vendingDiv {
-  
- 
+
+/*TEST CODE*/
+#background,#restaurants {
+  display: none;
+}
+.img-thumbnail {
+    padding: 2px;
+    border-radius: 10px;
+}
+.post-box {
+    margin: 15px 0 15px 0;
+}
+
+.post-box2 {
+    margin: 15px 0 15px 0;
+    width: 50%;
 
 }
+.testimonial {
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.testimonial::before { 
+    content: url('../img/icons/paperclip.png');
+    left: -10px;
+    top: -18px;
+    position: absolute;
+ }
+.post-box3 {
+    padding-left: 30px;
+    margin: 15px 5px 15px 5px;
+    width: 280px;   
+    background-color: #F4FBFD;
+    border-radius: 8px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 1px #888888;
+}
+/* --------------------*/
 
 
 /*FLIPPING EFFECT*/

@@ -1,7 +1,50 @@
 
 (function ($) {
 
-    $('header nav a').click(function() {
+  /* Set fade interval for carousel images */  
+    $(document).ready(function() {
+        $('.carousel').carousel({interval: 3000});
+    });
+
+  /*---- HEADER RESIZE ON SCROLL ANIMATION ---*/
+   /*
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){  
+            $('.mainLogo').addClass("sticky");
+        }
+        else{
+            $('.mainLogo').removeClass("sticky");
+        }
+    });
+    */ 
+    
+    $("document").ready(function() {                                   
+        $('.us').click(function(){
+            $('html, body').animate({
+                scrollTop: $(".heading-about").offset().top-100
+            }, 2000);                  
+        });
+        $('.reach').click(function(){
+
+            $('html, body').animate({
+                scrollTop: $(".foot").offset().top
+            }, 2000);                  
+        });
+
+    }); 
+
+    /*
+    $(document).ready(function(){
+        $("#profilePic1").click(function(){
+              $("#bio1").toggle(1000);
+        });
+        $("#profilePic2").click(function(){
+              $("#bio2").toggle(1000);
+        });
+    });
+    */
+
+   $('header nav a').click(function() {
         var $linkClicked = $(this).attr('href');
         document.location.hash = $linkClicked;
         if (!$(this).hasClass("active")) {
