@@ -12,73 +12,21 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
     <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
-    <link href="http://www.prepbootstrap.com/Content/css/nine-stars/nivo-lightbox.css" rel="stylesheet" />
-    <link href="http://www.prepbootstrap.com/Content/css/nine-stars/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
-    <link href="http://www.prepbootstrap.com/Content/css/nine-stars/animate.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
     <link href="css/online/styles.css" rel="stylesheet">
     <link href="css/customStyles.css" type="text/css" rel="stylesheet">
-    <link href="http://www.prepbootstrap.com/Content/css/nine-stars/default.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://www.prepbootstrap.com/Content/js/nine-stars/jquery.easing.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script> 
     <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
     <script type="text/javascript" src="js/stellar.js"></script>
     <script type="text/javascript" src="js/classie.js"></script>
-    <!--<script src="js/gnmenu.js"></script>-->
     <script type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript" src="/js/masonry.pkgd.js"></script>
-    <script type="text/javascript">
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 1){  
-                $('.mainLogo').addClass("sticky");
-            }
-            else{
-                $('.mainLogo').removeClass("sticky");
-            }
-        });
-
-         $("document").ready(function() {            
-                            
-                            $('.bg').click(function(){                                                   
-                                $('html, body').animate({
-                                    scrollTop: $("#background").offset().top-100
-                                }, 2000);                                                                    
-                             });
-                            
-                            $('.rest').click(function(){                                                   
-                                $('html, body').animate({
-                                    scrollTop: $("#restaurants").offset().top-100
-                                }, 2000);                                                                    
-                             });
-
-                           $('.vend').click(function(){                                                   
-                                $('html, body').animate({
-                                    scrollTop: $("#vending").offset().top-100
-                                }, 2000);                                                                    
-                             });
-                            
-                             $('.bg').click(function(){                                                   
-                                $('html, body').animate({
-                                    scrollTop: $("#background").offset().top-100
-                                }, 2000);                                                                    
-                             });                                                                                   
-            }); 
-            $(document).ready(function () {
-                var $container = $('.masonry');
-
-                $container.imagesLoaded(function () {
-                    $container.masonry({
-                        itemSelector: '.post-box',
-                        columnWidth: '.post-box',
-                        transitionDuration: 0
-                    });
-                });
-            });
-</script>
-
+    <script type="text/javascript" src="js/masonry.pkgd.js"></script>
 </head>
 
-<body style="background-image: url('img/back-bg4.png');background-attachment: fixed;">
+<body>
 
     <style type="text/css">
        #logo {
@@ -91,29 +39,34 @@
             padding-left: 100px;
             padding-right: 100px;
        }
-       .profile {
-            margin : 0 auto;
-            padding-bottom: 10px;
-       }
-       #restaurants, #vending {
-       }
-
+        .profile {
+          margin : 0 auto;
+          width: 40%;
+          height: auto;
+          opacity: 0.9;
+        }
+ 
     </style>
  
-   <header id="mainHead">
+   <header id="foodHead">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-lg-4 text-left logoDiv">
-                        <a href="index.html"><img class="mainLogo" src="img/logos/maypriLogo.png" alt="Maypri" /></a>
+                    <div class="col-lg-2 text-left">
+                        <ul class="logoList navigationList">
+                            <li class="logoOptions"><a href="index.html"><img class="mainLogo" src="img/maypri.png" alt="Maypri" /></a></li>
+                            <li><a href="mayprifoods.html"><img class="mainLogo" src="img/maypri_foods.png" alt="MaypriFoods" /></a></li>
+                            <li class="logoOptions"><a href="mayprihealthcare.html"><img class="mainLogo" src="img/maypri_healthcare.png" alt="MaypriHealthcare" /></a></li>
+                       </ul>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-8" style="">
+                    <div id="selectBrand" class="col-lg-2"><img id="dropdownImage" src="img/dropdown.png" alt="select" /></div>
+                    <div class="col-lg-8">
                         <nav>
                             <ul class="listOptions navigationList text-right">
-                                <li class="bg listEntryOptions active"><a href="#background" id="#background-link">BACKGROUND</a></li>
-                                <li class="rest listEntryOptions"><a href="#restaurants" id="#restaurants-link">RESTAURANTS & CAFES</a></li>
-                                <li class="vend listEntryOptions"><a href="#vending" id="vending-link">VENDING SOLUTIONS</a></li>
-                                <li class="franchise listEntryOptions"><a href="#franchising" id="franchising-link">FRANCHISING</a></li>
-                                <li class="gifts listEntryOptions"><a href="#gifts" id="gifts-link">GIFTS</a></li>
+                                <li class="bg listEntryOptions2 active" id="#background-link">ABOUT US</li>
+                                <li class="rest listEntryOptions2" id="#restaurants-link">RESTAURANTS & CAFES</li>
+                                <li class="vend listEntryOptions2" id="#vending-link">VENDING SOLUTIONS</li>
+                                <li class="franchise listEntryOptions2"><a href="#franchising" id="franchising-link">FRANCHISING</a></li>
+                                <li class="gifts listEntryOptions2"><a href="#gifts" id="gifts-link">GIFTS</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -121,27 +74,31 @@
             </div>        
     </header> 
 
-    
-    <div id="banner" style="height: 80%; padding-top:40px; margin-top: 120px; padding-top: 100px;">
-        <div class="container">
+    <!--MaypriFoods banner -->
+    <div id="banner" style="margin-top: 120px; padding-top: 80px; padding-bottom:20px;">
+        <!--<div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                     <img src="img/MaypriFoods_Banner.png" class="img-responsive" style="box-shadow: 10px 10px 5px #888888; margin: 0 auto;">
-                </div>            
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+                     <img src="img/MaypriFoods_Banner.png" class="img-responsive" style="box-shadow: 10px 10px 5px #888888; margin: 0 auto; margin-bottom: 5px;">
+          <!--      </div>            
             </div>
-        </div>
+        </div> -->
     </div>
 
-    <div id="wrapper">
         <!-- Section: background -->
-        <section id="background" class="text-center">
+        <section id="background" class="home-section text-center">
+            <div class="heading-about marginbot-50">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
-                                <p style="font-size: large; font-weight: bolder; text-align: justify;">Maypri Foods Pvt Ltd , a part of Maypri Corp with interests in F&B and healthcare sector , has presence in NCR region with leading F&B brands in the portfolio.<br/><br/>Maypri Foods, has regional franchise rights for Australia's The Chocolate Room for Noida, Greater Noida and Ghaziabad regions and is looking after the business development of this brand in Delhi and NCR region. We are also franchise partners with the reputed and legendary Colonel's Kababz of Delhi.</p> 
+                             <div class="section-heading">
+                             <h2 style="color: #EB5D1E;">ABOUT US</h2>
+                            <p style="font-size: large; font-weight: bolder; text-align: center;">Maypri Foods Pvt Ltd , a part of Maypri Corp with interests in F&B and healthcare sector , has presence in NCR region with leading F&B brands in the portfolio.<br/><br/>Maypri Foods, has regional franchise rights for Australia's The Chocolate Room for Noida, Greater Noida and Ghaziabad regions and is looking after the business development of this brand in Delhi and NCR region. We are also franchise partners with the reputed and legendary Colonel's Kababz of Delhi.</p><br/><br/><br/> 
+                             </div>  
                         </div>
                     </div>
                 </div>
+            </div>
          </section>
         <!-- /Section: background -->
 
@@ -153,13 +110,14 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="section-heading">
                                 <h2 style="color: #EB5D1E;">RESTAURANTS & CAFES</h2>
-                                <p style="font-size: large; font-weight: bolder; text-align: justify;">Every activity and operation at MFPL is governed and regulated by, our vision<br><b>"To be the best restaurant company for our people, partners and guests"</b> <br/>and our mission<br/> <b>"We will make our EVERY guest happy with a smile on our face"</b><br/>MFPL has a passionate and committed team of young professionals at the cafes and restaurants who together propel us towards our vision.</p> 
+                                <p style="font-size: large; font-weight: bolder; text-align: center;">Every activity and operation at MFPL is governed and regulated by, our vision<br><b>"To be the best restaurant company for our people, partners and guests"</b> <br/>and our mission<br/> <b>"We will make our EVERY guest happy with a smile on our face"</b><br/>MFPL has a passionate and committed team of young professionals at the cafes and restaurants who together propel us towards our vision.</p> 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container">
+            <!-- First row -->
                 <div class="row">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <div class="team ">
@@ -197,21 +155,90 @@
                             </div>
                         </div>  
                     </div>
+               </div>     
+               <!-- End of first row-->
+               <!-- Second row--> 
+               <div class="row">
+                   <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 ">
+<!--                        <div class="team ">
+                            <div class="inner">
+                                <h5>The Chocolate Room</h5>
+                                <p class="subtitle">National Sports Club of India (NSCI), Noida</p>
+                                <div class="avatar">
+                                    <a href=""><img src="img/restaurants/ChocolateRoomNSCI_thumb.png" alt="" class="img-responsive profile" /></a>
+                                    <p style="text-align: justify;"></p> 
+                                </div>
+                            </div>
+                        </div>  
+-->
+                     </div>
+                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="team ">
+                            <div class="inner">
+                                <h5>The Chocolate Room</h5>
+                                <p class="subtitle">Sports and Cultural Club, Sector 15A, Noida</p>
+                                <div class="avatar">
+                                    <a href=""><img src="img/restaurants/ChocolateRoomClub15_thumb.png" alt="" class="img-responsive profile" /></a>
+                                    <p style="text-align: justify;"></p> 
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="team ">
+                            <div class="inner">
+                                <h5>The Chocolate Room</h5>
+                                <p class="subtitle">Grand Cinemas, Raheja Mall, Gurgaon</p>
+                                <div class="avatar">
+                                    <a href=""><img src="img/restaurants/ChocolateRoomGurgaon_thumb.png" alt="" class="img-responsive profile" /></a>
+                                    <p style="text-align: justify;"></p> 
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                   <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 ">
+<!--                        <div class="team ">
+                            <div class="inner">
+                                <h5>The Chocolate Room</h5>
+                                <p class="subtitle">National Sports Club of India (NSCI), Noida</p>
+                                <div class="avatar">
+                                    <a href=""><img src="img/restaurants/ChocolateRoomNSCI_thumb.png" alt="" class="img-responsive profile" /></a>
+                                    <p style="text-align: justify;"></p> 
+                                </div>
+                            </div>
+                        </div>  
+-->
+                     </div>
+ 
                </div>      
             </div>
         </section>
 
 
-         <!-- div: Vending -->   
-        <section id="vending" style="margin-top:60px; margin-bottom: 60px;">
-            <div class="container">
+         <section id="vending" class="home-section text-center " >
+             <div class="heading-about marginbot-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="section-heading">
+                                <h2 style="color: #EB5D1E;">VENDING SOLUTIONS</h2>
+                                <p style="font-size: large; font-weight: bolder; text-align: center;">Maypri Foods Pvt Ltd are authorised technology partners with E-cube India Solutions Ltd, leading manufacturers of SmartVend - Automatic Food & Snack vending machines, for Noida, Greater Noida , Ghaziabad & Jaipur cities. We offer an end-to-end vending operations business model right from installation, maintenance, stock replenishment to day-to-day operations of the vending machines.</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="container">
                 <div class="masonry">
                     <div class="post-box col-lg-4 col-md-4 col-sm-4"><img class="img-responsive img-thumbnail" src="img/vending/vending2.jpg" />
                     </div>
                     <div class="post-box col-lg-4 col-md-4 col-sm-4"><img class="img-responsive img-thumbnail" src="img/vending/vending1.jpg" /></div>
                     <div class="post-box2 col-lg-4 col-md-4 col-sm-4"><img class="img-responsive img-thumbnail" src="img/vending/vending3.jpg" />
                     </div>
-                    <div class="post-box col-lg-4 col-md-4 col-sm-4"><img class="img-responsive img-thumbnail" src="img/vending/vending4.jpg" />
+                    <div class="post-box3 col-lg-4 col-md-4 col-sm-4">
+                        <p class="testimonial">"We have procured 24 snack & 4 cold vending machines..installed at Reliance factory"</p>
+                    </div>
+                    <div class="post-box3 col-lg-4 col-md-4 col-sm-4"><img class="img-responsive img-thumbnail" src="img/vending/vending4.jpg" />
                     </div>
                  </div>
             </div>

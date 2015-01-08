@@ -23,32 +23,37 @@
     <script type="text/javascript" src="js/stellar.js"></script>
     <script type="text/javascript" src="js/classie.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
-</head>
+ </head>
 
 <body>
-    <!-- HEADER WITH LOGO AND NAVIGATION -->
+ <!-- HEADER WITH LOGO AND NAVIGATION -->
     <header id="mainHead">
-        <nav>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-lg-4 text-left logoDiv">
-                        <img class="mainLogo" src="img/logos/maypri_logo_orange_bg.png" alt="Maypri" />
+                    <div class="col-lg-2 text-left logoDiv">
+                        <ul class="logoList navigationList">
+                            <li><a href="index.html"><img class="mainLogo" src="img/logos/maypri_logo_orange_bg.png" alt="Maypri" /></a></li>
+                            <li class="logoOptions"><a href="mayprifoods.html"><img class="mainLogo" src="img/maypri_foods.png" alt="MaypriFoods" /></a></li>
+                            <li class="logoOptions"><a href="mayprihealthcare.html"><img class="mainLogo" src="img/maypri_healthcare.png" alt="MaypriHealthcare" /></a></li>
+                       </ul>
                     </div>
-                    <div class="col-sm-12 col-md-8 col-lg-8">
-                        <ul class="listOptions navigationList text-right" style="padding-top: 20px;">
-                            <li class="us listEntryOptions">ABOUT US</li>
-                            <li class="listEntryOptions"><a href="mayprifoods/mayprifoods.html">MAYPRI FOODS</a></li>
-                            <li class="listEntryOptions"><a href="mayprihealthcare.html">MAYPRI HEALTHCARE</a></li>
-                            <li class="reach listEntryOptions">CONTACT</li>
-                        </ul>
+                    <div id="selectBrand" class="col-lg-2"><img id="dropdownImage" src="img/dropdown.png" alt="select" /></div>
+                    <div class="col-lg-8">
+                        <nav>
+                            <ul class="listOptions navigationList text-right">
+                                <li class="us listEntryOptions">ABOUT US</li>
+                                <li class="listEntryOptions"><a href="mayprifoods.html">MAYPRI FOODS</a></li>
+                                <li class="listEntryOptions"><a href="mayprihealthcare.html">MAYPRI HEALTHCARE</a></li>
+                                <li class="reach listEntryOptions">CONTACT</li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>        
-        </nav>
     </header>
 
     <!-- Section: carousel -->
-    <section id="carousel" class="carouselClass" style="margin-top: 200px; margin-bottom: 0px;">
+    <section id="carousel" class="carouselClass" style="margin-top:150px; margin-bottom: 0px; padding:50px 10px 50px 10px">
         <div id="myCarousel" class="carousel slide" data-ride="carousel" > 
             <!-- Indicators --> 
             <!--<ol class="carousel-indicators">
@@ -57,13 +62,13 @@
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>-->
             <div class="carousel-inner"  style="box-shadow: 10px 10px 5px #888888; width:100%; max-height:80%; margin:0 auto;">
-                <div class="item active"> <img src="img/avalanche2.png" style="width:100%" alt="First slide">
+                <div class="item active"> <img src="img/Collage7.png" style="width:100%" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption">
                          </div>
                     </div>
                 </div>
-                <div class="item"> <img src="img/Collage5.png" style="width:100%" data-src="" alt="Second    slide">
+                <div class="item"> <img src="img/Collage5.png" style="width:100%" data-src="" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption">
                         </div>
@@ -96,11 +101,9 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="section-heading">
-                            <p style="text-shadow: 2px 2px #B4B4B4;font-size: 50px;color: #EB5D1E; font-weight:bold;">OUR VISION</p><br/>
-                            <p>---------------------------------<img src="img/icons/lightning.png">--------------------------</p>
-                            <p style="font-style:italic;font-size: 20px; color: #7B7B7B; font-weight:bold; font-family:cursive;">To be the best and most preferred services company for our people, partners and clients</p><br/>
-                            <p>---------------------------------<img src="img/icons/lightning.png">--------------------------</p>
- 
+                            <p style="text-shadow: 2px 2px #B4B4B4;font-size: 50px;color: #EB5D1E; font-weight:bold;">OUR VISION</p><p>----------<img src="img/icons/line_divider_rotated.png" height="35" width="80" style="PADDING-BOTTOM: 5px">----------</p>
+                            <p style="font-style:italic;font-size: 18px; color: #7B7B7B; font-weight:bold; font-family:cursive;">To be the best and most preferred services company for our people, partners and clients</p><p>----------<img src="img/icons/line_divider.png" height="40" width="80" style="PADDING-TOP: 10px">----------</p><br/>
+                            <p align="left" style="font-size: 18px; color: #7B7B7B; font-family:serif;">MAYPRI was established by Mayur Mathur and Priya Mathur in 2011 as a food & beverage franchise venture. The company has since expanded into hospitality and healthcare sectors.</p>
                         </div>
                     </div>
                 </div>
@@ -165,7 +168,7 @@
                     </div>-->
                     <div class="service-desc">
                         <a href="mayprifoods.html"><h4>Maypri Foods PVT LTD.</h4>
-                        <img id="logoWork"  class="img-responsive" src="img/maypri_foods.png">
+                        <img id="logoWork"  class="img-responsive" src="img/maypri_foods.png" style="max-height:150px">
                         </a>
                     </div>
                 </div>
@@ -179,7 +182,7 @@
                     </div>-->
                     <div class="service-desc">
                         <a href="mayprihealthcare.html"><h4>Maypri Healthcare PVT LTD.</h4>
-                        <img id="logoWork"  class="img-responsive" src="img/maypri_healthcare.png">
+                        <img id="logoWork"  class="img-responsive" src="img/maypri_healthcare.png" style="max-height:150px">
                         </a>
                     </div>
                 </div>
@@ -187,24 +190,26 @@
             </div>
         </div>      
         </div>
+        <!--<a class="goToTop"><img src="img/go_top.png"</a> -->
 </section>
     <!-- /Section: about -->
-      
-        <footer class="foot">
-            <div class="container">
-                <div class="row">
-                    <div class="text-left col-sm-8 col-md-8 col-lg-8">
-                        <h4 style="color: white;">Want To Reach Us ?</h2>
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-lg-4">    
-                        <ul class="contact text-right">
-                            <li><i class="fa fa-phone" style="color:green;">&nbsp;</i>Call Us On <a href="tel:+919899997283">+91&nbsp;98999&nbsp;97283</a></li>
-                            <li><i class="fa fa-envelope">&nbsp;</i>Email us <a href="mailto:mayur@mayprifoods.com" class="email">mayur@mayprifoods.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>    
-        </footer>
+  
+
+<footer class="foot">
+    <div class="container">
+        <div class="row">
+            <div class="text-left col-sm-8 col-md-8 col-lg-8">
+                <h4 style="color: white;">Want To Reach Us ?</h2>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">    
+                <ul class="contact text-right">
+                    <li><i class="fa fa-phone" style="color:green;">&nbsp;</i>Call Us On <a href="tel:+919899997283">+91&nbsp;98999&nbsp;97283</a></li>
+                    <li><i class="fa fa-envelope">&nbsp;</i>Email us <a href="mailto:mayur@mayprifoods.com" class="email">mayur@mayprifoods.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</footer>
     <!-- /Section: contact -->  
 
 </body>
