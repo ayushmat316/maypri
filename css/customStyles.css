@@ -7,6 +7,12 @@ p {
   text-shadow: 2px;
 }
 
+.subHeading {
+  font-size: 50px;
+  color: #EB5D1E;
+  font-weight:bold;
+  text-align: center;
+}
 #logo {
   margin: 0 auto;
   padding-bottom: 20px;
@@ -52,7 +58,7 @@ p {
   background-size: 100%; 
 }
 #foodHead {
-  position: absolute;
+  position: fixed;
   z-index: 200;
   width: 100%;
   top: 0px;
@@ -79,6 +85,11 @@ p {
   background-attachment: fixed;
   background-size: 100%;
 }
+
+.transparentHeader {
+  opacity: 0.7;
+}
+
 .mainLogo {
   margin: 0 auto;
   height: 8%;
@@ -151,6 +162,13 @@ p {
   /*border-right: groove;*/
 }
 
+.currentPageSelection {
+  background: -webkit-linear-gradient(top, #FFFFFF 0%, #E5E5E5 100%);
+  box-shadow: rgba(0, 0, 0, 0.0980392) 2px 2px; 
+  color: #EB5D1E; 
+  text-shadow: #FFFFFF 1px 1px; 
+  border-radius: 4px;
+}
 
 .listEntryOptions2:hover {
   /*border:2px solid #FFFFFF;
@@ -368,14 +386,21 @@ p {
 
 
 /*TEST CODE*/
-#restaurants, #vending {
+#restaurants {
   display: none;
-  background-color: white;
-  width: 98%;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  margin-bottom: 20px;
-  box-shadow: 10px 10px 5px #888888;
-  border-radius: 10px;
+  margin-bottom: -40px;
+}
+
+#vending {
+  display: block;
+  background-color: #FFFFFF;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: -40px;
 }
 
 #logo1 {
@@ -432,6 +457,51 @@ p {
 }
 /* --------------------*/
 
+#scroller {
+    position: relative;
+}
+#scroller .innerScrollArea {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#scroller ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#scroller li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+}
+
+#productScroller {
+    position: relative;
+}
+#productScroller .innerScrollArea {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#productScroller ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#productScroller li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+}
 
 /*FLIPPING EFFECT*/
 /* entire container, keeps perspective */

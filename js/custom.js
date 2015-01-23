@@ -1,7 +1,6 @@
 
 (function ($) {
-  
-  /*---- SET FADE INTERVAL FOR CAROUSEL IMAGES--- */  
+   /*---- SET FADE INTERVAL FOR CAROUSEL IMAGES--- */  
     $(document).ready(function() {
         $('.carousel').carousel({interval: 3000});
     });
@@ -41,6 +40,20 @@
             }, 2000);                  
         });
     }); */
+
+/*------ TRANSPARENT HEADER ON SCROLL ------*/
+   $(window).scroll(function() {
+        if ($(this).scrollTop() > 50){  
+            $('#mainHead').addClass("transparentHeader");
+            $('#foodHead').addClass("transparentHeader");
+            $('#healthHead').addClass("transparentHeader");
+        }
+        else{
+            $('#mainHead').removeClass("transparentHeader");
+            $('#foodHead').removeClass("transparentHeader");
+            $('#healthHead').removeClass("transparentHeader");
+        }
+    });
 
 /*----DISPLAY BACKGROUND INFO ON MAYPRI FOODS----*/
    $(document).ready(function () {       
@@ -87,7 +100,89 @@
         });
     }); 
 
+/*----- VENDING CLIENTS LOGO SCROLLER---*/
+    var scroller = $('#scroller div.innerScrollArea');
+    var scrollerContent = scroller.children('ul');
+    scrollerContent.children().clone().appendTo(scrollerContent);
+    var curX = 0;
+    scrollerContent.children().each(function(){
+        var $this = $(this);
+        $this.css('left', curX);
+        curX += $this.outerWidth(true);
+    });
+    var fullW = curX / 2;
+    var viewportW = scroller.width();
 
+    // Scrolling speed management
+    var controller = {curSpeed:0, fullSpeed:2};
+    var $controller = $(controller);
+    var tweenToNewSpeed = function(newSpeed, duration)
+    {
+        if (duration === undefined)
+            duration = 600;
+        $controller.stop(true).animate({curSpeed:newSpeed}, duration);
+    };
+
+    // Pause on hover
+    /*scroller.hover(function(){
+        tweenToNewSpeed(0);
+    }, function(){
+        tweenToNewSpeed(controller.fullSpeed);
+    });*/
+
+    // Scrolling management; start the automatical scrolling
+    var doScroll = function()
+    {
+        var curX = scroller.scrollLeft();
+        var newX = curX + controller.curSpeed;
+        if (newX > fullW*2 - viewportW)
+            newX -= fullW;
+        scroller.scrollLeft(newX);
+    };
+    setInterval(doScroll, 20);
+    tweenToNewSpeed(controller.fullSpeed);
+
+    var productScroller = $('#productScroller div.innerScrollArea');
+    var productScrollerContent = productScroller.children('ul');
+    productScrollerContent.children().clone().appendTo(productScrollerContent);
+    var productCurX = 0;
+    productScrollerContent.children().each(function(){
+        var $this = $(this);
+        $this.css('left', productCurX);
+        productCurX += $this.outerWidth(true);
+    });
+    var productFullW = productCurX / 2;
+    var productViewportW = productScroller.width();
+
+    // Scrolling speed management
+    var productController = {curSpeed:0, fullSpeed:2};
+    var $productController = $(productController);
+    var productTweenToNewSpeed = function(newSpeed, duration)
+    {
+        if (duration === undefined)
+            duration = 600;
+        $productController.stop(true).animate({curSpeed:newSpeed}, duration);
+    };
+
+    // Pause on hover
+    /*scroller.hover(function(){
+        tweenToNewSpeed(0);
+    }, function(){
+        tweenToNewSpeed(controller.fullSpeed);
+    });*/
+
+    // Scrolling management; start the automatical scrolling
+    var prodDoScroll = function()
+    {
+        var productCurX = productScroller.scrollLeft();
+        var productNewX = productCurX + productController.curSpeed;
+        if (productNewX > productFullW*2 - productViewportW)
+            productNewX -= productFullW;
+        productScroller.scrollLeft(productNewX);
+    };
+    setInterval(prodDoScroll, 20);
+    productTweenToNewSpeed(productController.fullSpeed);
+    /*---------------------------------*/
     /*
     $(document).ready(function(){
         $("#profilePic1").click(function(){
