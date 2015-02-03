@@ -1,5 +1,20 @@
 
 (function ($) {
+
+    $('.fadein img:gt(0)').hide();
+    setInterval(function(){
+      $('.fadein :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.fadein');}, 
+      3000);
+
+    $('.fadein2 img:gt(0)').hide();
+    setInterval(function(){
+      $('.fadein2 :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.fadein2');}, 
+      3000);
+
    /*---- SET FADE INTERVAL FOR CAROUSEL IMAGES--- */  
     $(document).ready(function() {
         $('.carousel').carousel({interval: 3000});
