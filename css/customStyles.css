@@ -7,8 +7,9 @@
   border-radius: 4px;
 }
 .navbar-default {
-    border: 0px;
-    background-image: url('../img/orange.jpg');
+  background-size: 100%;
+  border: 0px;
+  box-shadow: 5px 5px 5px;
 }
 
 .navbar .nav > li > a {
@@ -21,7 +22,8 @@
 
 
 body {
-
+  background-image: url('../img/vending/restaurant_icons.png');
+  background-attachment: fixed;
 }
 p {
   font-weight: bolder;
@@ -59,6 +61,163 @@ p {
   text-align: justify;
 }
 
+.panel {
+    margin: 0 auto;
+    width:370px;
+    height:305px;
+    background: none;
+    /*width: 130px;
+    height: 130px;*/  
+    position: relative;
+    font-size: .8em;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+}
+/* -- make sure to declare a default for every property that you want animated -- */
+/* -- general styles, including Y axis rotation -- */
+.panel .front {
+    position: absolute;
+    top: 0;
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.panel.flip .front {
+    z-index: 900;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+.panel .back {
+    position: absolute;
+    top: 0;
+    z-index: 800;
+    width: inherit;
+    height: inherit;
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.panel.flip .back {
+    z-index: 1000;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+
+.pad2{
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+
+#Vision {
+  padding-bottom: 42px;
+}
+
+.boxStyle {
+  margin-bottom: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  border: 1px none #000000;
+  border-radius: 5px;   
+}
+
+.boxStyleOrange {
+  margin-bottom: 20px;
+  padding: 20px;
+  color:#422A10;
+  background-color: #FFFFFF;
+  background-image: url('../img/vending/restaurant_icons3.png');
+  -webkit-box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  border: 1px none #000000;
+  border-radius: 5px;  
+}
+
+.boxStyleYellow {
+  margin-bottom: 20px;
+  padding: 20px;
+  /*background-color: #FFFFFF;*/
+  background-image: url('../img/vending/restaurant_icons4.png');
+  -webkit-box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  border: 1px none #000000;
+  border-radius: 5px;  
+}
+
+.boxStyleBlue {
+  margin-bottom: 20px;
+  padding: 20px;
+  color: #FFFFFF;
+  /*background-color: #FFFFFF;*/
+  background-image: url('../img/vending/restaurant.png');
+  -webkit-box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  border: 1px none #000000;
+  border-radius: 5px;  
+}
+
+.boxStyleGreen {
+  margin-bottom: 20px;
+  padding: 20px;
+  color: #FFFFFF;
+  /*background-color: #FFFFFF;*/
+  background-image: url('../img/restaurant_icons5.png');
+  -webkit-box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  border: 1px none #000000;
+  border-radius: 5px; 
+}
+
+.boxStyle1 {
+  margin-bottom: 20px;
+  padding: 20px;
+  color: #422A10;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  box-shadow: 18px 9px 23px 0px rgba(0,0,0,0.55);
+  border: 1px none #000000;
+  border-radius: 5px;  
+}
+
+#WhoWeAre {
+
+}
+
+#Businesses {
+  margin: 0 auto;
+  width:80%;
+}
+
 #whyVendistro {
   margin-bottom: 20px;
   padding: 20px;
@@ -71,6 +230,7 @@ p {
   border: 1px none #000000;
   border-radius: 5px;
 }
+
 #whatVendistro {
   margin-bottom: 20px;
   padding: 20px;
@@ -148,8 +308,8 @@ p {
 }
 .profile {
   margin : 0 auto;
-  width:80%;
-  height: auto;
+  height: 305px;
+  width:auto;
   opacity: 0.9;
 }
 
@@ -323,9 +483,13 @@ p {
 }
 
 /*Carousel styling */
-.carousel {
+#carousel {
+  width:90%;
+  margin-bottom: 0px;
+  margin:0 auto;
+  padding:80px 10px 50px 10px;
    /* height: 500px;*/
-    overflow: hidden;
+  overflow: hidden;
    /*border: 20px double #ece8e1;*/
 }
 .carousel .item {
@@ -405,12 +569,12 @@ p {
       background: none;
     }
 
-    .profile {
+ /*   .profile {
       margin : 0 auto;
       width:50%;
       height: auto;
       opacity: 0.9;
-    }
+    }*/
     #selectBrand {
       font-weight:bolder;
       text-align: center;
@@ -461,12 +625,12 @@ p {
       background: none;
     }
 
-    .profile {
+/*    .profile {
       margin : 0 auto;
       width:50%;
       height: auto;
       opacity: 0.9;
-    }
+    }*/
     #selectBrand {
       font-weight:bolder;
       text-align: center;
@@ -510,7 +674,9 @@ p {
 }
 .foot {
     width: 100%;
-    height: 150px;
+    padding-top: 20px; 
+    padding-bottom: 10px; 
+    color: #D3D3D3;
     /*background-color: #4F4F4F;*/
     background-image: url('../img/footer-bg.png');
     background-attachment: fixed;

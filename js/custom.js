@@ -15,7 +15,8 @@
          .end().appendTo('.fadein2');}, 
       3000);
 
-   /*---- SET FADE INTERVAL FOR CAROUSEL IMAGES--- */  
+       
+  /*---- SET FADE INTERVAL FOR CAROUSEL IMAGES--- */  
     $(document).ready(function() {
         $('.carousel').carousel({interval: 3000});
     });
