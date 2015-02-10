@@ -30,6 +30,25 @@ p {
   text-shadow: 2px;
 }
 
+.customButton {
+  background-color: #FFFFFF;
+  padding-top: -10px;
+  margin: 0 auto;
+  text-align: center;
+  width:100px;
+  height:30px;
+  box-shadow: 2px 2px 2px;
+  border:2px solid grey;
+  border-radius: 5px;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.customButton:hover {
+  background-color: #d6d1d1;
+  box-shadow: 1px 1px 1px;
+  border:1px solid grey;
+
+}
 /* For vending products */
 .fadein { position:relative; width:auto; height:200px; text-align: center; }
 .fadein img {position:absolute; left:0; right:0; top:0; margin:0 auto}
@@ -63,8 +82,8 @@ p {
 
 .panel {
     margin: 0 auto;
-    width:370px;
-    height:305px;
+    width:320px;
+    height:320px;
     background: none;
     /*width: 130px;
     height: 130px;*/  
@@ -72,6 +91,7 @@ p {
     font-size: .8em;
     -webkit-perspective: 600px;
     -moz-perspective: 600px;
+    -ms-perspective:600px;
 }
 /* -- make sure to declare a default for every property that you want animated -- */
 /* -- general styles, including Y axis rotation -- */
@@ -88,6 +108,9 @@ p {
     -moz-transform: rotateX(0deg) rotateY(0deg);
     -moz-transform-style: preserve-3d;
     -moz-backface-visibility: hidden;
+    -ms-transform: rotateX(0deg) rotateY(0deg);
+    -ms-transform-style: preserve-3d;
+    -ms-backface-visibility: hidden;
     /* -- transition is the magic sauce for animation -- */
     -o-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
@@ -99,6 +122,7 @@ p {
     z-index: 900;
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
 }
 .panel .back {
     position: absolute;
@@ -113,6 +137,10 @@ p {
     -moz-transform: rotateY(-180deg);
     -moz-transform-style: preserve-3d;
     -moz-backface-visibility: hidden;
+
+    -ms-transform: rotateY(-180deg);
+    -ms-transform-style: preserve-3d;
+    -ms-backface-visibility: hidden;
     /* -- transition is the magic sauce for animation -- */
     -o-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
@@ -124,6 +152,7 @@ p {
     z-index: 1000;
     -webkit-transform: rotateX(0deg) rotateY(0deg);
     -moz-transform: rotateX(0deg) rotateY(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg);
 }
 
 .pad2{
@@ -308,7 +337,7 @@ p {
 }
 .profile {
   margin : 0 auto;
-  height: 305px;
+  height: 320px;
   width:auto;
   opacity: 0.9;
 }
@@ -482,17 +511,20 @@ p {
   color: #EB5D1E;
 }
 
-/*Carousel styling */
+/*Carousel div styling */
 #carousel {
-  width:90%;
+  width:76%;
   margin-bottom: 0px;
   margin:0 auto;
-  padding:80px 10px 50px 10px;
+  padding:20px 10px 50px 10px;
    /* height: 500px;*/
-  overflow: hidden;
+  /*overflow: hidden;*/
    /*border: 20px double #ece8e1;*/
 }
-.carousel .item {
+
+/*--- CSS for fade effect instead of slide effect on carousel --- */
+
+/*.carousel .item {
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
     -ms-transition: opacity 1s;
@@ -508,7 +540,7 @@ p {
     left:0;
     opacity:1;
     z-index:1;
-}
+}*/
 
 
 .contact {
@@ -544,6 +576,9 @@ p {
     }
     .navigationList {
       text-align: center;
+    }
+    #carousel {
+      width:90%;
     }
     .carouselClass {
       margin-top: 600px; margin-bottom: 0px;
@@ -591,6 +626,9 @@ p {
 
 @media only screen and (device-width: 768px), only screen and (max-width: 1200px)  {
 
+    #carousel {
+      width:90%;
+    }
     .listEntryOptions {
         font-size:0.8em;
     }
@@ -673,6 +711,7 @@ p {
   cursor: pointer;
 }
 .foot {
+   bottom: 0;
     width: 100%;
     padding-top: 20px; 
     padding-bottom: 10px; 

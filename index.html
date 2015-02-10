@@ -26,44 +26,22 @@
     <script type="text/javascript" src="js/stellar.js"></script>
     <script type="text/javascript" src="js/classie.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
-     <script type="text/javascript">
-        $(document).ready(function(){
-            // set up hover panels
-            // although this can be done without JavaScript, we've attached these events
-            // because it causes the hover to be triggered when the element is tapped on a touch device
-            $('.hover').hover(function(){
-                $(this).addClass('flip');
-            },function(){
-                $(this).removeClass('flip');
-            });
-        });
-    </script>
+
 </head>
-
-<body>
-    <!--Bootstrap navigation bar for mavpricorp -->
-    <div class="navbar navbar-default navbar-fixed-top" style="background-image: url('img/teal2.jpg');">
+<body style="background-image: url('img/background2.jpg'); background-size: 100%;">
+<!--  Maypri header logo
+    <div>
         <div class="container">
-            <div class="navbar-header">
-                <a href="index.html" class="navbar-brand"><img src="img/maypri_logo_orange_bg.png" style="margin-top:-20px;"></a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                     <span class="sr-only">Toggle navigation</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                </button>                  
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4"></div>
+                <div class="col-sm-4 col-md-4 col-lg-4" style="text-align: center;">
+                     <img src="img/maypri_orange_small.png" style="width:50%;">   
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4"></div>
             </div>
-            <div class="collapse navbar-collapse navbar-right">
-                <ul class="nav navbar-nav">
-                    <li class="navlink active"><a href="index.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>&nbsp;&nbsp;ABOUT US</a></li>
-                    <li class="navlink"><a href="mayprifoods.html"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>&nbsp;&nbsp;MAYPRI FOODS</a></li>
-                    <li class="navlink"><a href="mayprihealthcare.html"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;MAYPRI HEALTHCARE</a></li>
-                           
-                </ul>
-            </div>
-        </div>            
-    </div><!--
-
+        </div>
+    </div>
+-->
     <!-- Section: carousel -->
     <section id="carousel" class="carouselClass">
         <div id="myCarousel" class="carousel slide" data-ride="carousel" > 
@@ -73,26 +51,26 @@
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>-->
-            <div class="carousel-inner"  style="box-shadow: 10px 10px 5px #888888; width:100%; max-height:80%; margin:0 auto;">
-                <div class="item active"> <img src="img/Collage7.png" style="width:100%" alt="First slide">
+            <div class="carousel-inner"  style="border: 1px solid grey;box-shadow: 5px 5px 5px;">
+                <div class="item active"> <img src="img/carousel/maypri_foods_TCR.png" style="width:100%" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption">
                          </div>
                     </div>
                 </div>
-                <div class="item"> <img src="img/Collage5.png" style="width:100%" data-src="" alt="Second slide">
+                <div class="item"> <img src="img/carousel/maypri_foods_CK.png" style="width:100%" data-src="" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption">
                         </div>
                     </div>
                 </div>
-                <div class="item"> <img src="img/Collage4.png" style="width:100%" data-src="" alt="Third slide">
+                <div class="item"> <img src="img/carousel/maypri_foods_vendistro.png" style="width:100%" data-src="" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption">
                         </div>
                     </div>
                 </div>
-                <div class="item"> <img src="img/Collage6.png" style="width:100%" data-src="" alt="Third slide">
+                <div class="item"> <img src="img/carousel/maypri_healthcare.png" style="width:100%" data-src="" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption">
                         </div>
@@ -105,78 +83,35 @@
     </section>
     <!-- /Section: carousel -->
 
-
-    <!-- Section: about -->
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div id="Vision" class="boxStyleOrange">
-                        <div class="section-heading">
-                            <p class="subHeading" style="color: #3DA09D;">Our Vision</p>
-                            <p class="subContent">To be the best and most preferred services company for our people, partners and clients</p> 
-                        </div>
-                    </div>    
-               </div>
-                <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div id="WhoWeAre" class="boxStyleYellow">
-                        <div class="section-heading">
-                            <p class="subHeading">Who We Are</p>
-                            <p class="subContent">MAYPRI was established by Mayur Mathur and Priya Mathur in 2011 as a food & beverage franchise venture. It holds business interests in the hospitality and healthcare sectors through its group companies Maypri Foods Pvt Ltd & Maypri Healthcare Pvt Ltd </p> 
-                        </div>
-                    </div>                        
-                </div>
-            </div>
-        </div>
-    </div>
-    <br/><br/>
-
-
-    <!-- Section: Directors -->
-    <div>
+    <div style="width:90%; margin: 0 auto;">
         <div class="container-fluid">
             <div class="row">
-                <div class=" col-md-1 col-lg-1"></div>
-                <div class="col-sm-6 col-md-5 col-lg-5">
-                    <div class="">
-                        <p class="subContent" style="text-align: center; padding-top:30px;">MAYUR MATHUR</p>
-                        <p class="subContent" style="margin-top: -20px;text-align: center;">Director</p>
-                        <div class="hover panel">
-                                <div class="front">
-                                    <div class="pad">
-                                        <img src="img/Mayur_ProfilePic3.png" alt="logo front" class="profile"/>
-                                    </div>
-                                </div>
-                                <div class="back">
-                                    <div class="pad2">
-                                        <p class="subContent" style="text-align: justify;">A passionate and committed individual, has a Bachelors of Engineering degree in Electronics & Telcommunication from MIT, Pune and a diploma in management in Finance from SIIB Pune. Having worked for 5 years with ICICI Lombard General Insurance Co. Ltd in the Underwriting and Risk Management division, in 2011 he along with Priya Mathur founded <b>MAYPRI</b> by venturing into the franchise business in the F&B industry.</p>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                <div class="col-sm-10 col-md-10 col-lg-10" style="border-radius: 10px;box-shadow: 5px 5px 5px ; background-color: #72c5c9;">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4" style="border: 1px dashed grey;padding-top: 40px;padding-bottom: 60px;">
+                            <img src="img/maypri_orange_small.png" style="margin:0 auto;width:auto; height:100px;" class="img-responsive">
+                            <p class="subContent" style="text-align: center;">A hospitality and healthcare venture.</p>
+                            <div class="customButton"><p><a href="about.html">About Us</a></p></div>
                         </div>
-                </div>    
-               <div class="col-sm-6 col-md-5 col-lg-5">
-                    <div class="">
-                        <p class="subContent" style="text-align: center;padding-top: 30px;">PRIYA MATHUR</p>
-                        <p class="subContent" style="margin-top: -20px;text-align: center;">Director</p>
-                        <div class="hover panel">
-                            <div class="front">
-                                <div class="pad">
-                                    <img src="img/Priya_ProfilePic2.png" alt="logo front" class="profile"/>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="pad2">
-                                    <p class="subContent" style="text-align: justify;">She holds a Bachelors of Commerce from Maharani College, Jaipur and  a diploma in management in Finance from SIIB Pune. She has worked for 2 years in ICICI Lombard General Insurance Co. Ltd & Iffco Tokio General Insurance in the Corporate Operations division. She also has extensive experience as a stock market consultant. In 2011 she along with Mayur Mathur founded <b>MAYPRI</b> by venturing into the franchise business in the F&B industry.</p>
-                                </div>
-                            </div>
+                        <div class="col-sm-4 col-md-4 col-lg-4" style="border: 1px dashed grey;padding-top: 40px;padding-bottom: 60px;">
+                            <img src="img/maypri_foods.png" style="margin:0 auto;width:auto; height:100px;"class="img-responsive">
+                            <p class="subContent" style="text-align: center;">Cafes, restaurants, & vending solutions.</p>
+                            <div class="customButton"><p><a href="mayprifoods.html">Visit Site</a></p></div>                            
                         </div>
-                    </div> 
+                        <div class="col-sm-4 col-md-4 col-lg-4" style="border: 1px dashed grey;padding-top: 40px;padding-bottom: 60px;">
+                            <img src="img/maypri_healthcare.png" style="margin:0 auto;width:auto; height:100px;" class="img-responsive">
+                            <p class="subContent" style="text-align: center;">Our healthcare initiative.</p>
+                            <div class="customButton"><p><a href="mayprihealthcare.html">Visit Site</a></p></div>                                           
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-1 col-lg-1"></div>
+                <div class="col-sm-1 col-md-1 col-lg-1"></div>
             </div>
         </div>
     </div>
+
+
     <br/><br/>
 
     <div class="foot">
