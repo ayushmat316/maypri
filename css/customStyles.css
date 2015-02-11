@@ -44,6 +44,7 @@ p {
 }
 
 .customButton:hover {
+  cursor: pointer;
   background-color: #d6d1d1;
   box-shadow: 1px 1px 1px;
   border:1px solid grey;
@@ -339,7 +340,6 @@ p {
   margin : 0 auto;
   height: 320px;
   width:auto;
-  opacity: 0.9;
 }
 
 /*.profile:hover {
@@ -564,6 +564,28 @@ p {
 
 .machineSection {
   width:100%;
+}
+/*.profile {
+  margin : 0 auto;
+  height: 200px;
+  width:auto;
+ }*/ 
+/*.panel {
+    margin: 0 auto;
+    width:310px;
+    height:325px;
+    background: none;
+    /*width: 130px;*/
+    /*height: 130px;*/  
+    /*position: relative;
+    font-size: .8em;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    -ms-perspective:600px;
+}*/
+.pad2{
+    font-size: 0.8em;
+    padding: 15px;
 }
 #whatVendistro {
       margin-top: 10px;

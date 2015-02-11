@@ -26,7 +26,19 @@
     <script type="text/javascript" src="js/stellar.js"></script>
     <script type="text/javascript" src="js/classie.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
-
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $('#button1').click(function() {
+           document.location.href='about.html';
+          });
+          $('#button2').click(function() {
+           document.location.href='mayprifoods.html';
+          });
+          $('#button3').click(function() {
+           document.location.href='mayprihealthcare.html';
+          });
+        });
+    </script>
 </head>
 <body style="background-image: url('img/background2.jpg'); background-size: 100%;">
 <!--  Maypri header logo
@@ -43,7 +55,7 @@
     </div>
 -->
     <!-- Section: carousel -->
-    <section id="carousel" class="carouselClass">
+    <section id="carousel" class="carouselClass" style="margin-top:50px">
         <div id="myCarousel" class="carousel slide" data-ride="carousel" > 
             <!-- Indicators --> 
             <!--<ol class="carousel-indicators">
@@ -83,7 +95,7 @@
     </section>
     <!-- /Section: carousel -->
 
-    <div style="width:90%; margin: 0 auto;">
+    <div style="width:90%; margin: 0 auto; margin-bottom:50px">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-1 col-md-1 col-lg-1"></div>
@@ -91,18 +103,17 @@
                     <div class="row">
                         <div class="col-sm-4 col-md-4 col-lg-4" style="border: 1px dashed grey;padding-top: 40px;padding-bottom: 60px;">
                             <img src="img/maypri_orange_small.png" style="margin:0 auto;width:auto; height:100px;" class="img-responsive">
-                            <p class="subContent" style="text-align: center;">A hospitality and healthcare venture.</p>
-                            <div class="customButton"><p><a href="about.html">About Us</a></p></div>
+                            <div id="button1" class="customButton"><p>Visit Site</p></div>
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4" style="border: 1px dashed grey;padding-top: 40px;padding-bottom: 60px;">
                             <img src="img/maypri_foods.png" style="margin:0 auto;width:auto; height:100px;"class="img-responsive">
-                            <p class="subContent" style="text-align: center;">Cafes, restaurants, & vending solutions.</p>
-                            <div class="customButton"><p><a href="mayprifoods.html">Visit Site</a></p></div>                            
+                            <!--<p class="subContent" style="text-align: center;">Cafes, restaurants, & vending solutions.</p>-->
+                            <div id="button2" class="customButton"><p>Visit Site</p></div>
                         </div>
                         <div class="col-sm-4 col-md-4 col-lg-4" style="border: 1px dashed grey;padding-top: 40px;padding-bottom: 60px;">
                             <img src="img/maypri_healthcare.png" style="margin:0 auto;width:auto; height:100px;" class="img-responsive">
-                            <p class="subContent" style="text-align: center;">Our healthcare initiative.</p>
-                            <div class="customButton"><p><a href="mayprihealthcare.html">Visit Site</a></p></div>                                           
+                           <!-- <p class="subContent" style="text-align: center;">Our healthcare initiative.</p> -->
+                            <div id="button3" class="customButton"><p>Visit Site</p></div>
                         </div>
                     </div>
                 </div>
@@ -114,7 +125,7 @@
 
     <br/><br/>
 
-    <div class="foot">
+    <footer class="foot" style="margin-top:50px; margin-bottom:0px; position:fixed;">
         <div class="container">
             <div class="row">
                 <div class="text-left col-sm-4 col-md-2 col-lg-2">
@@ -128,7 +139,7 @@
                 </div>
             </div>
         </div>    
-    </div>
+    </footer>
     <!-- /Section: contact -->  
 
 </body>
