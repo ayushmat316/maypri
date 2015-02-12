@@ -40,7 +40,7 @@ p {
   box-shadow: 2px 2px 2px;
   border:2px solid grey;
   border-radius: 5px;
-  font-family: 'Merriweather', serif;
+  font-family: 'Chelsea Market', cursive;
 }
 
 .customButton:hover {
@@ -70,12 +70,12 @@ p {
 }
 
 .caption{
-  font-family: 'Merriweather', serif;
+  font-family: 'Chelsea Market', cursive;
   font-size: 25px; 
   font-weight: bolder; 
 }
 .subContent {
-  font-family: 'Merriweather', serif;
+  font-family: 'Chelsea Market', cursive;
   font-size: 15px; 
   font-weight: bolder; 
   text-align: justify;
