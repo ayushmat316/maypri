@@ -518,7 +518,7 @@ p {
   margin:0 auto;
   padding:20px 10px 50px 10px;
    /* height: 500px;*/
-  /*overflow: hidden;*/
+  overflow: hidden;
    /*border: 20px double #ece8e1;*/
 }
 

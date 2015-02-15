@@ -1,5 +1,21 @@
-
 (function ($) {
+    $(document).ready(function() {
+        $('#button1').click(function() {
+            document.location.href='about.html';
+        });
+        $('#button2').click(function() {
+           document.location.href='mayprifoods.html';
+        });
+        $('#button3').click(function() {
+           document.location.href='mayprihealthcare.html';
+        });
+
+        $('.hover').hover(function(){
+            $(this).addClass('flip');
+        },function(){
+            $(this).removeClass('flip');
+        });
+    });
 
     $('.fadein img:gt(0)').hide();
     setInterval(function(){
