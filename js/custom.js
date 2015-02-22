@@ -1,5 +1,14 @@
 (function ($) {
-    $(document).ready(function() {
+       $(document).ready(function() {
+        $('ul#testNav li a').click(function() {
+            /* Act on the event */
+            var page = $(this).attr('href');
+            $('#restaurantContent').load(page +'.html');
+           
+            return false;
+        });
+
+
         $('#button1').click(function() {
             document.location.href='about.html';
         });
