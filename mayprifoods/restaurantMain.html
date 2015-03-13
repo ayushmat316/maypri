@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Maypri Foods</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" />
+    <link href="../css/online/styles.css" rel="stylesheet">
+    <link href="../css/customStyles.css" type="text/css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Chelsea+Market' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function() {
+            $('#brand1').click(function() {
+                $('#brandContent1').slideToggle("slow");
+                $('.locationList').slideToggle("slow");
+                $('#brandContent2').slideUp("slow");
+            });
+            $('#brand2').click(function() {
+                $('#brandContent2').slideToggle("slow");
+                $('#brandContent1').slideUp("slow");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+     <!--Bootstrap navigation bar for mayprifoods -->
+    <div class="navbar navbar-default" style="background-image: url('../img/orange.jpg');">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="mayprifoods.html" class="navbar-brand"><img src="../img/maypri_foods_logo2.png" style="width:80px; height: auto;margin-top:-10px;"></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                </button>                  
+            </div>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="navlink"><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;HOME</a></li>
+                    <li class="navlink active"><a href="../mayprifoods.html"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>&nbsp;&nbsp;RESTAURANTS & CAFES</a></li>
+                    <li class="navlink"><a href="../vending.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;&nbsp;VENDISTRO</a></li>
+                    <li class="navlink"><a href=""><span class="glyphicon glyphicon-flag" aria-hidden="true"></span>&nbsp;&nbsp;FRANCHISING</a></li>
+                    <li class="navlink"><a href=""><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>&nbsp;&nbsp;GIFTS</a></li>        
+                </ul>
+            </div>
+        </div>            
+    </div>
+
+    <div>
+        <div class="container-fluid">
+            <p class="subContent" style="font-size: 40px; text-align: center; color:blue;">Click on a brand</p>                
+            <div class="row">
+                <div class="col-sm-1 col-md-1 col-lg-1">
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="text-align: center;">
+                    <img id="brand1" src="../img/restaurants/logos/colonelskebabz_logo.png" style="width:80%;" class="brand img-circle">
+                    <div id="brandContent1" style="display:none;">
+                        <p class="subContent" style="font-size: 15px; text-align: justify">The legendary kabab house from the Defence Colony fame in New Delhi ,famous for its seekh kababs and sizzling curry dishes, we now bring its flavors to Noida at <br/><a href="colonelskebabzGIP.html"><u>The Great India Place Mall.</a>                  
+                    </div>
+                </div>
+                <br/>
+                <div class="col-sm-2 col-md-2 col-lg-2" style="top:20px;text-align: center;">
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" style="text-align: center;">
+                    <img id="brand2" src="../img/restaurants/logos/thechocolateroom_logo.png" style="width:82%; margin-top: -30px; " class=" brand img-circle">
+                    <div id="brandContent2" style="display:none;">
+                        <p class="subContent" style="font-size: 15px; text-align: justify">Originated in Victoria, Australia in 2006 The Chocolate Room is one of the leading brands in the chocolate cafe market today with more than hundred franchised stores across India. Distinctly recognisable and applauded for its creativity in drinks, dishes, desserts, chocolates and chocolate gifts, we now bring it to Delhi and NCR region. <br/><br/>Select a Location to check it out:
+                        </p>                
+                        <ul class="subContent">
+                            <li><u><a href="">National Sports Club of India, Delhi</a></u></li>
+                            <li><u><a href="">The Great India Place Mall, Noida</a></u></li>
+                            <li><u><a href="">Sports and Cultural Club Sector 15A, Noida</a></u></li>
+                            <li><u><a href="">Grand Cinemas, Sohna Road, Gurgaon</a></u></li>
+                        </ul>                        
+                    </div>
+                </div>
+               <div class="col-sm-1 col-md-1 col-lg-1">
+               </div>
+            </div>            
+        </div>
+    </div>
+
+</body>
+
+</html>
