@@ -1,5 +1,24 @@
 (function ($) {
-       $(document).ready(function() {
+    function menuClear() {
+        $('#menuNavigationList li').each(function() {
+            var id = $(this).attr('id').replace("Link","");
+            if($('#' + id).css('display') == 'block') {
+                $('#' + id).css('display', 'none');
+                $('#' + id + "Link").css('background', '#30A6E6');                    
+            }
+        });
+    } 
+
+    function menuSelect(menuCategory) {
+        $('#'+ menuCategory).addClass('subContent');
+        $('#'+ menuCategory).toggle("slow");
+        $('html, body').animate({ scrollTop:  $('#'+menuCategory).offset().top - 50 }, 'slow');
+        if($('#'+menuCategory).css('display') == 'block') {
+            $('#'+menuCategory+'Link').css('background', '#000000');
+        }        
+    }   
+
+    $(document).ready(function() {
         $('ul#testNav li a').click(function() {
             /* Act on the event */
             var page = $(this).attr('href');
@@ -24,7 +43,33 @@
         },function(){
             $(this).removeClass('flip');
         });
+
+        $('#tandooriSpecialsLink').click(function() {
+            menuClear();
+            menuSelect('tandooriSpecials');
+        });
+        $('#signatureRollsLink').click(function() {
+            menuClear();
+            menuSelect('signatureRolls');
+        });
+        $('#aLaCarteLink').click(function() {
+            menuClear();
+            menuSelect('aLaCarte');
+        });
+        $('#sizzlingSpecialsLink').click(function() {
+            menuClear();
+            menuSelect('sizzlingSpecials');
+        });
+        $('#weekdayDelightsLink').click(function() {
+            menuClear();
+            menuSelect('weekdayDelights');
+        });
+        $('#riceBreadsLink').click(function() {
+            menuClear();
+            menuSelect('riceBreads');
+        });
     });
+
 
     $('.fadein img:gt(0)').hide();
     setInterval(function(){

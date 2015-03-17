@@ -1,3 +1,101 @@
+.menuNavigation {
+  margin-left: 4%;
+
+}
+.menuNavigation ul, .menuNavigation li {
+  padding: 0;
+}
+.menuNavigation ul {
+  background: gray;
+  list-style: none;
+  width: 100%;
+}
+.menuNavigation li {
+  float: left;
+  position: relative;
+  width:auto;
+  background: #30A6E6;
+  color: #FFFFFF;
+  display: block;
+  font: bold 12px/20px sans-serif;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.menuNavigation li:hover {
+  background: #000000;
+  cursor: pointer;
+}
+
+.menuNavigationActive {
+  background: #000000;
+}
+.menuNavigation a {
+  background: #30A6E6;
+  color: #FFFFFF;
+  display: block;
+  font: bold 12px/20px sans-serif;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.menuNavigation li:hover a {
+  background: #000000;
+}
+
+.menuCategory {
+  display:none;
+  clear: both;
+  width:90%;
+  margin:0 auto;
+  margin-top: 50px;
+}
+.stitched {
+   padding: 10px;
+   margin: 10px;
+   margin:0 auto;
+   background: #EDEAE6;
+   /*width:40%;*/
+   color: #8E6547;
+   font-size: 50px;
+   font-weight: bold;
+   line-height: 1.3em;
+   border: 2px dashed #C7BEB6;
+   border-radius: 10px;
+   box-shadow: 0 0 0 4px #EDEAE6, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   /*text-shadow: -1px -1px #aa3030;*/
+   font-weight: normal;
+}
+
+#bookTable {
+  -webkit-transition-duration: 2.0s;
+    -moz-transition-duration: 2.0s;
+    -o-transition-duration: 2.0s;
+    transition-duration: 2.0s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+}
+
+#bookTable:hover {
+  -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+}
 @font-face {
    font-family: myFirstFont;
    src: url('../fonts/bonheur-royale.ttf');
@@ -759,6 +857,23 @@ p {
 
 @media only screen and (device-width: 768px), only screen and (max-width: 1200px)  {
 
+  .menuNavigation li {
+    float: none;
+    position: relative;
+    width:auto;
+    background: #30A6E6;
+    color: #FFFFFF;
+    display: block;
+    font: bold 12px/20px sans-serif;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+  }
     #brand2 {
       padding-top: 40px;
     }
