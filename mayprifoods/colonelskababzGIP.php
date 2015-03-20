@@ -1,4 +1,4 @@
- <!doctype php>
+ <!doctype html>
 <html>
 
 <head>

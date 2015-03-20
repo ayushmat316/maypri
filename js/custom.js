@@ -14,7 +14,7 @@
         $('#'+ menuCategory).toggle("slow");
         $('html, body').animate({ scrollTop:  $('#'+menuCategory).offset().top - 50 }, 'slow');
         if($('#'+menuCategory).css('display') == 'block') {
-            $('#'+menuCategory+'Link').css('background', '#000000');
+            $('#'+menuCategory+'Link').css('background', '#FFFFFF');
         }        
     }   
 
