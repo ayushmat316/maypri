@@ -57,8 +57,9 @@
 
 
         <div class="container" style="margin-top: 0px;">
-            <div class="row-fluid">
-                <div class="col-sm-3 col-md-3 col-lg-3">
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3 hidden-xs">
+                    <img src="../img/restaurants/misc/foodCartoon1.gif" class="img-responsive">
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <div style="text-align: center; ">
@@ -66,7 +67,8 @@
                         <p class="subContent" style="text-align: center;font-size: 20px;">@ The Great India Place Mall, Noida</p>    
                     </div>
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="col-sm-3 col-md-3 col-lg-3 hidden-xs">
+                    <img src="../img/restaurants/misc/foodCartoon2.gif" class="img-responsive">
                 </div>
             </div>
             <div class="row">
